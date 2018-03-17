@@ -15,6 +15,8 @@
 		722E46F82042593100DAF987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722E46F62042593100DAF987 /* LaunchScreen.storyboard */; };
 		722E47032042593100DAF987 /* Chord_ConnectionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E47022042593100DAF987 /* Chord_ConnectionsTests.swift */; };
 		722E470E2042593100DAF987 /* Chord_ConnectionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E470D2042593100DAF987 /* Chord_ConnectionsUITests.swift */; };
+		722E471D2042598D00DAF987 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E471C2042598D00DAF987 /* NoteModel.swift */; };
+		724A3CF4204CD8DE008E5840 /* PianoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724A3CF3204CD8DE008E5840 /* PianoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		722E47092042593100DAF987 /* Chord ConnectionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chord ConnectionsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		722E470D2042593100DAF987 /* Chord_ConnectionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chord_ConnectionsUITests.swift; sourceTree = "<group>"; };
 		722E470F2042593100DAF987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		722E471C2042598D00DAF987 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		724A3CF3204CD8DE008E5840 /* PianoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,12 @@
 		722E46E92042593100DAF987 /* Chord Connections */ = {
 			isa = PBXGroup;
 			children = (
-				722E46EA2042593100DAF987 /* AppDelegate.swift */,
-				722E46EC2042593100DAF987 /* ViewController.swift */,
 				722E46EE2042593100DAF987 /* Main.storyboard */,
-				722E46F42042593100DAF987 /* Assets.xcassets */,
-				722E46F62042593100DAF987 /* LaunchScreen.storyboard */,
-				722E46F92042593100DAF987 /* Info.plist */,
+				722E46EC2042593100DAF987 /* ViewController.swift */,
+				724A3CF3204CD8DE008E5840 /* PianoView.swift */,
+				722E471C2042598D00DAF987 /* NoteModel.swift */,
 				722E46F12042593100DAF987 /* Chord_Connections.xcdatamodeld */,
+				722E471B2042594C00DAF987 /* Supporting Files */,
 			);
 			path = "Chord Connections";
 			sourceTree = "<group>";
@@ -126,6 +129,17 @@
 				722E470F2042593100DAF987 /* Info.plist */,
 			);
 			path = "Chord ConnectionsUITests";
+			sourceTree = "<group>";
+		};
+		722E471B2042594C00DAF987 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				722E46EA2042593100DAF987 /* AppDelegate.swift */,
+				722E46F42042593100DAF987 /* Assets.xcassets */,
+				722E46F62042593100DAF987 /* LaunchScreen.storyboard */,
+				722E46F92042593100DAF987 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +278,9 @@
 			files = (
 				722E46ED2042593100DAF987 /* ViewController.swift in Sources */,
 				722E46F32042593100DAF987 /* Chord_Connections.xcdatamodeld in Sources */,
+				722E471D2042598D00DAF987 /* NoteModel.swift in Sources */,
 				722E46EB2042593100DAF987 /* AppDelegate.swift in Sources */,
+				724A3CF4204CD8DE008E5840 /* PianoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48535654Y7;
-				INFOPLIST_FILE = "Chord Connections/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Chord Connections/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ASM.Chord-Connections";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,7 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48535654Y7;
-				INFOPLIST_FILE = "Chord Connections/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Chord Connections/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ASM.Chord-Connections";
 				PRODUCT_NAME = "$(TARGET_NAME)";
