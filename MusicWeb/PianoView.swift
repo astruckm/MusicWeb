@@ -28,7 +28,7 @@ class PianoView: UIView {
     var blackKeyHeight: CGFloat { return bounds.height / 1.5 }
         
     //All the notes in the view
-    let arrayOfKeys = [(PitchClass.c, Octave.zero), (PitchClass.cSharp, Octave.zero), (PitchClass.d, Octave.zero), (PitchClass.dSharp, Octave.zero), (PitchClass.e, Octave.zero), (PitchClass.f, Octave.zero), (PitchClass.fSharp, Octave.zero), (PitchClass.g, Octave.zero), (PitchClass.gSharp, Octave.zero), (PitchClass.a, Octave.zero), (PitchClass.aSharp, Octave.zero), (PitchClass.b, Octave.zero), (PitchClass.c, Octave.one), (PitchClass.cSharp, Octave.one), (PitchClass.d, Octave.one), (PitchClass.dSharp, Octave.one), (PitchClass.e, Octave.one), (PitchClass.f, Octave.one), (PitchClass.fSharp, Octave.one), (PitchClass.g, Octave.one)]
+    let arrayOfKeys = [(PitchClass.c, Octave.zero), (PitchClass.cSharp, Octave.zero), (PitchClass.d, Octave.zero), (PitchClass.dSharp, Octave.zero)/*, (PitchClass.e, Octave.zero), (PitchClass.f, Octave.zero), (PitchClass.fSharp, Octave.zero), (PitchClass.g, Octave.zero), (PitchClass.gSharp, Octave.zero), (PitchClass.a, Octave.zero), (PitchClass.aSharp, Octave.zero), (PitchClass.b, Octave.zero), (PitchClass.c, Octave.one), (PitchClass.cSharp, Octave.one), (PitchClass.d, Octave.one), (PitchClass.dSharp, Octave.one), (PitchClass.e, Octave.one), (PitchClass.f, Octave.one), (PitchClass.fSharp, Octave.one), (PitchClass.g, Octave.one)*/]
     //To map a touch's area in layer to its note
     var currentPath: UIBezierPath? = nil
     var noteByPathArea = [UIBezierPath: (PitchClass, Octave)]()
@@ -37,15 +37,20 @@ class PianoView: UIView {
     //MARK: Touch events
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if touches.count == 1 {
+            print(touches)
             let touch = touches.first
             let location = touch?.location(in: self)
             if let location = location {
                 for path in noteByPathArea.keys {
                     if path.contains(location) {
                         let note = noteByPathArea[path]?.0
+                        print("White key top width is: \(whiteKeyTopWidth)")
+                        print("Black key width is: \(blackKeyWidth)")
+                        print("Upper left corner of starting rect is: \(path.currentPoint)")
+                        print("Touch occurs at: \(location)")
                         if let note = note {
                             let possibleStrings = note.possibleStrings(pitchClass: note)
-                            print(possibleStrings[0])
+//                            print(possibleStrings[0])
                             noteNameDelegate?.noteName = possibleStrings[0]
                         }
                         break
@@ -84,7 +89,7 @@ class PianoView: UIView {
     override func draw(_ rect: CGRect) {
         var startingXValue: CGFloat = bounds.minX
         var incrementer: CGFloat = 0.0
-        for key in arrayOfKeys[0...(arrayOfKeys.count-2)] {
+        for key in arrayOfKeys[0..<(arrayOfKeys.count-1)] {
             switch key.0 {
             case .c, .f:
                 drawWhiteKeysCF(startingX: startingXValue, topWidth: whiteKeyTopWidth, shortHeight: blackKeyHeight)
@@ -105,10 +110,11 @@ class PianoView: UIView {
             startingXValue += incrementer
         }
         //make final G fill out view
+        /*
         drawWhiteKeysEB(startingX: startingXValue, topWidth: whiteKeyTopWidth, shortHeight: blackKeyHeight)
         if let path = currentPath {
             noteByPathArea[path] = arrayOfKeys[arrayOfKeys.count-1]
-        }
+        } */
     }
 
     //MARK: Drawing (sub)functions
@@ -122,9 +128,10 @@ class PianoView: UIView {
         path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
         path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
         path.close()
+        currentPath = path
+        
         UIColor.black.setFill()
         path.fill()
-        currentPath = path
     }
     
     func drawWhiteKeysCF(startingX: CGFloat, topWidth: CGFloat, shortHeight: CGFloat) {

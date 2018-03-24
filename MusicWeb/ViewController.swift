@@ -13,6 +13,7 @@ class ViewController: UIViewController, DisplaysNoteName {
     @IBOutlet weak var noteNameLabel: UILabel!
     @IBOutlet weak var piano: PianoView! {
         didSet {
+            piano.draw(piano.bounds)
             piano.noteNameDelegate = self
         }
     }

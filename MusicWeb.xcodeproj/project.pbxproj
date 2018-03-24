@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721D4DD92065EFC00040E702 /* Music_WebUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721D4DD72065EFBF0040E702 /* Music_WebUITests.swift */; };
 		722E46EB2042593100DAF987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E46EA2042593100DAF987 /* AppDelegate.swift */; };
 		722E46ED2042593100DAF987 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E46EC2042593100DAF987 /* ViewController.swift */; };
 		722E46F02042593100DAF987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722E46EE2042593100DAF987 /* Main.storyboard */; };
 		722E46F32042593100DAF987 /* MusicWeb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 722E46F12042593100DAF987 /* MusicWeb.xcdatamodeld */; };
 		722E46F52042593100DAF987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 722E46F42042593100DAF987 /* Assets.xcassets */; };
 		722E46F82042593100DAF987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722E46F62042593100DAF987 /* LaunchScreen.storyboard */; };
-		722E470E2042593100DAF987 /* Chord_ConnectionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E470D2042593100DAF987 /* Chord_ConnectionsUITests.swift */; };
 		722E471D2042598D00DAF987 /* HarmonyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E471C2042598D00DAF987 /* HarmonyModel.swift */; };
 		724A3CF4204CD8DE008E5840 /* PianoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724A3CF3204CD8DE008E5840 /* PianoView.swift */; };
 		72C71979206144D50055C742 /* NoteTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C71978206144D50055C742 /* NoteTypes.swift */; };
@@ -37,8 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		720B5F822064143600CD05B1 /* Chord_ConnectionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chord_ConnectionsTests.swift; sourceTree = "<group>"; };
+		720B5F822064143600CD05B1 /* Music_WebTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_WebTests.swift; sourceTree = "<group>"; };
 		720B5F832064143600CD05B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		721D4DD72065EFBF0040E702 /* Music_WebUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_WebUITests.swift; sourceTree = "<group>"; };
+		721D4DD82065EFC00040E702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		722E46E72042593100DAF987 /* MusicWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		722E46EA2042593100DAF987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		722E46EC2042593100DAF987 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,8 +51,6 @@
 		722E46F92042593100DAF987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		722E46FE2042593100DAF987 /* MusicWebTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicWebTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		722E47092042593100DAF987 /* MusicWebUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicWebUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		722E470D2042593100DAF987 /* Chord_ConnectionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chord_ConnectionsUITests.swift; sourceTree = "<group>"; };
-		722E470F2042593100DAF987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		722E471C2042598D00DAF987 /* HarmonyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonyModel.swift; sourceTree = "<group>"; };
 		724A3CF3204CD8DE008E5840 /* PianoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoView.swift; sourceTree = "<group>"; };
 		72C71978206144D50055C742 /* NoteTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTypes.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		720B5F812064143600CD05B1 /* MusicWebTests */ = {
 			isa = PBXGroup;
 			children = (
-				720B5F822064143600CD05B1 /* Chord_ConnectionsTests.swift */,
+				720B5F822064143600CD05B1 /* Music_WebTests.swift */,
 				720B5F832064143600CD05B1 /* Info.plist */,
 			);
 			path = MusicWebTests;
@@ -129,14 +129,13 @@
 				720B5F812064143600CD05B1 /* MusicWebTests */,
 			);
 			name = MusicWebTests;
-			path = MusicWeb;
 			sourceTree = "<group>";
 		};
 		722E470C2042593100DAF987 /* MusicWebUITests */ = {
 			isa = PBXGroup;
 			children = (
-				722E470D2042593100DAF987 /* Chord_ConnectionsUITests.swift */,
-				722E470F2042593100DAF987 /* Info.plist */,
+				721D4DD82065EFC00040E702 /* Info.plist */,
+				721D4DD72065EFBF0040E702 /* Music_WebUITests.swift */,
 			);
 			name = MusicWebUITests;
 			sourceTree = "<group>";
@@ -295,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721D4DD92065EFC00040E702 /* Music_WebUITests.swift in Sources */,
 				722E46ED2042593100DAF987 /* ViewController.swift in Sources */,
 				722E46F32042593100DAF987 /* MusicWeb.xcdatamodeld in Sources */,
 				722E471D2042598D00DAF987 /* HarmonyModel.swift in Sources */,
@@ -315,7 +315,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				722E470E2042593100DAF987 /* Chord_ConnectionsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
