@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		722E46EB2042593100DAF987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E46EA2042593100DAF987 /* AppDelegate.swift */; };
-		722E46ED2042593100DAF987 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E46EC2042593100DAF987 /* ViewController.swift */; };
+		722E46ED2042593100DAF987 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E46EC2042593100DAF987 /* NoteViewController.swift */; };
 		722E46F02042593100DAF987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722E46EE2042593100DAF987 /* Main.storyboard */; };
 		722E46F32042593100DAF987 /* MusicWeb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 722E46F12042593100DAF987 /* MusicWeb.xcdatamodeld */; };
 		722E46F52042593100DAF987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 722E46F42042593100DAF987 /* Assets.xcassets */; };
@@ -40,7 +40,7 @@
 		720B5F832064143600CD05B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		722E46E72042593100DAF987 /* MusicWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		722E46EA2042593100DAF987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		722E46EC2042593100DAF987 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		722E46EC2042593100DAF987 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		722E46EF2042593100DAF987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		722E46F22042593100DAF987 /* Chord_Connections.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chord_Connections.xcdatamodel; sourceTree = "<group>"; };
 		722E46F42042593100DAF987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				722E46EE2042593100DAF987 /* Main.storyboard */,
-				722E46EC2042593100DAF987 /* ViewController.swift */,
+				722E46EC2042593100DAF987 /* NoteViewController.swift */,
 				724A3CF3204CD8DE008E5840 /* PianoView.swift */,
 				72C7197A206145400055C742 /* Model */,
 				722E46F12042593100DAF987 /* MusicWeb.xcdatamodeld */,
@@ -281,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				722E46ED2042593100DAF987 /* ViewController.swift in Sources */,
+				722E46ED2042593100DAF987 /* NoteViewController.swift in Sources */,
 				722E46F32042593100DAF987 /* MusicWeb.xcdatamodeld in Sources */,
 				722E471D2042598D00DAF987 /* HarmonyModel.swift in Sources */,
 				722E46EB2042593100DAF987 /* AppDelegate.swift in Sources */,

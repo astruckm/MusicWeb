@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NoteViewController.swift
 //  Chord Connections
 //
 //  Created by ASM on 2/24/18.
@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController, DisplaysNoteName {
+class NoteViewController: UIViewController, DisplaysNoteName {
     @IBOutlet weak var noteNameLabel: UILabel!
     @IBOutlet weak var piano: PianoView! {
         didSet {
@@ -43,22 +43,4 @@ class ViewController: UIViewController, DisplaysNoteName {
         noteNameLabel.text = "Name of Note"
     }
     
-//    @objc func location(from tapRecognizer: UITapGestureRecognizer) {
-//        piano.getLocation(from: tapRecognizer)
-//        print("gotLocation")
-//    }
-    
-    //MARK: Touch events
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        return
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        return
-    }
-
-
 }

@@ -8,7 +8,6 @@
 //White key short widths of 3/4 and 2/3 uses "B/12 solution" from:
 //http://www.mathpages.com/home/kmath043.htm
 //set c=d=e=(W-2B/3) and f=g=a=b=(W-3B/4)
-//Decided not to use for now, and just used all=(W-B/2)
 //
 
 import UIKit
