@@ -15,8 +15,12 @@ enum PitchClass: Int, Comparable {
         return lhs.rawValue < rhs.rawValue
     }
     
+//    var isBlackKey: Bool {
+//        
+//    }
+    
     //No double sharps or flats
-    func possibleStrings(pitchClass: PitchClass)-> [String] {
+    func possibleStrings(pitchClass: PitchClass) -> [String] {
         switch pitchClass {
         case .c:
             return ["C"]

@@ -13,7 +13,6 @@ class ViewController: UIViewController, DisplaysNoteName {
     @IBOutlet weak var noteNameLabel: UILabel!
     @IBOutlet weak var piano: PianoView! {
         didSet {
-            piano.draw(piano.bounds)
             piano.noteNameDelegate = self
         }
     }
@@ -39,6 +38,7 @@ class ViewController: UIViewController, DisplaysNoteName {
         view.isMultipleTouchEnabled = true
         piano.isUserInteractionEnabled = true
         piano.isMultipleTouchEnabled = true
+        piano.backgroundColor = .lightGray
         noteNameLabel.textColor = .lightGray
         noteNameLabel.text = "Name of Note"
     }
